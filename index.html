@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JQUERY Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/0ed939dbeb.js" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | Social Media Dashboard With Theme Switcher Master</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-color-wrapper">
+
+    <div class="first-wrapper">
+
+      <section id="header">
+        <div class="header-container">
+          <div class="heading">
+            <h2>Social Media Dashboard</h2>
+            <p class="total-followers">Total Followers: 23,004</p>
+          </div>
+          <hr>
+          <div class="dark-mode-button">
+            <p class="dark-mode-text">Dark Mode</p>
+            <label class="switch">
+              <input type="checkbox" onclick="myFunction()">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+
+      </section>
+
+    </div>
+  </div>
+
+  <div class="second-wrapper">
+    <section id="main-dashboard">
+      <div class="followers-container">
+        <div class="sn-container fb-con">
+          <div class="user-name-container">
+            <i class="fab fa-facebook-square fa-2x social-icon"></i>
+            <p class="user-name-txt">@nathanf</p>
+          </div>
+          <h1>1987</h1>
+          <p class="followers-txt">Followers</p>
+          <p class="added-followers-txt">▲ 12 Today</p>
+        </div>
+
+        <div class="sn-container twt-con">
+          <div class="user-name-container">
+            <i class="fab fa-twitter fa-2x social-icon"></i>
+            <p>@nathanf</p>
+          </div>
+          <h1>1044</h1>
+          <p class="followers-txt">Followers</p>
+          <p class="added-followers-txt">▲ 99 Today</p>
+        </div>
+
+        <div class="sn-container ins-con">
+          <div class="user-name-container">
+            <i class="fab fa-instagram fa-2x social-icon"></i>
+            <p>@realnathanf</p>
+          </div>
+          <h1>11k</h1>
+          <p class="followers-txt">Followers</p>
+          <p class="added-followers-txt">▲ 1099 Today</p>
+        </div>
+
+        <div class="sn-container ytb-con">
+          <div class="user-name-container">
+            <i class="fab fa-youtube fa-2x social-icon"></i>
+            <p>Nathan F.</p>
+          </div>
+          <h1>8239</h1>
+          <p class="followers-txt">Subscribers</p>
+          <p class="reduced-followers-txt">▼ 144 Today</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="overview-dashboard">
+      <div class="overview-header-container">
+        <h2>Overview - Today</h2>
+      </div>
+
+      <div class="overview-first-row-container">
+
+        <div class="sn-container">
+          <div class="ov-container">
+            <p class="ov-con-header">Page Views</p>
+            <i class="fab fa-facebook-square fa-2x social-icon"></i>
+          </div>
+          <div class="ov-container">
+            <p class="ov-number">87</p>
+            <p class="ov-percentage added-followers-txt">▲3%</p>
+          </div>
+        </div>
+
+        <div class="sn-container">
+          <div class="ov-container">
+            <p class="ov-con-header">Likes</p>
+            <i class="fab fa-facebook-square fa-2x social-icon"></i>
+          </div>
+          <div class="ov-container">
+            <p class="ov-number">52</p>
+            <p class="ov-percentage reduced-followers-txt">▼2%</p>
+          </div>
+        </div>
+
+        <div class="sn-container">
+          <div class="ov-container">
+            <p class="ov-con-header">Likes</p>
+            <i class="fab fa-instagram fa-2x social-icon"></i>
+          </div>
+          <div class="ov-container">
+            <p class="ov-number">5462</p>
+            <p class="ov-percentage added-followers-txt">▲2257%</p>
+          </div>
+        </div>
+
+        <div class="sn-container">
+          <div class="ov-container">
+            <p class="ov-con-header">Profile Views</p>
+            <i class="fab fa-instagram fa-2x social-icon"></i>
+          </div>
+          <div class="ov-container">
+            <p class="ov-number">52k</p>
+            <p class="ov-percentage added-followers-txt">▲1375%</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="overview-first-row-container">
+
+        <div class="sn-container">
+          <div class="ov-container">
+            <p class="ov-con-header">Retweets</p>
+            <i class="fab fa-twitter fa-2x social-icon"></i>
+          </div>
+          <div class="ov-container">
+            <p class="ov-number">117</p>
+            <p class="ov-percentage added-followers-txt">▲303%</p>
+          </div>
+        </div>
+
+        <div class="sn-container">
+          <div class="ov-container">
+            <p class="ov-con-header">Likes</p>
+            <i class="fab fa-twitter fa-2x social-icon"></i>
+          </div>
+          <div class="ov-container">
+            <p class="ov-number">507</p>
+            <p class="ov-percentage added-followers-txt">▲553%</p>
+          </div>
+        </div>
+
+        <div class="sn-container">
+          <div class="ov-container">
+            <p class="ov-con-header">Likes</p>
+            <i class="fab fa-youtube fa-2x social-icon"></i>
+          </div>
+          <div class="ov-container">
+            <p class="ov-number">107</p>
+            <p class="ov-percentage reduced-followers-txt">▼19%</p>
+          </div>
+        </div>
+
+        <div class="sn-container">
+          <div class="ov-container">
+            <p class="ov-con-header">Total Views</p>
+            <i class="fab fa-youtube fa-2x social-icon"></i>
+          </div>
+          <div class="ov-container">
+            <p class="ov-number">1407</p>
+            <p class="ov-percentage reduced-followers-txt">▼12%</p>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Matan Rath</a>.
+    </div>
+
+
+
+    <script src="theme.js" charset="utf-8"></script>
+</body>
+
+</html>
